@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    var quizContainer = $("#quiz");
+    var resultsContainer = $("#results");
+    var submitButton = $("#results");
+    function quiz() { }
+    function showResults() { }
+    submitButton.click(showResults);
+    var myQuestions = [
+    {
+            question: "whats the best zelda game?",
+            answers: {
+                A: "Majora's Mask",
+                B: "Ocarina of Time",
+                C: "Windwaker"
+            },
+            correctAnswer: "A"
+        },
+        {
+            question: "what is the strongest mask in Majora's Mask?",
+            answers: {
+                A: "Goron",
+                B: "Deku",
+                C: "Fierce Diety"
+            },
+            correctAnswer: "C"
+        },
+        {
+            question: "what is the second best Zelda game?",
+            answers: {
+                A: "Majora's Mask",
+                B: "Link Between Worlds",
+                C: "Twilight Princess"
+            },
+            correctAnswer: "C"
+        },
+        {
+            question: "who is Zelda?",
+            answers: {
+                A: "The Princess of Hyrule",
+                B: "The Main protagonist you play as",
+                C: "The Evil Warlock"
+            },
+            correctAnswer: "B"
+        },
+    ];
+    quiz();
+    console.log(myQuestions)
+</script>
+
+<body>
+    <div id="quiz"></div>
+    <button id="submit">Submit Quiz!</button>
+    <div id="results"></div>
+
+</body>
+
+</html>
